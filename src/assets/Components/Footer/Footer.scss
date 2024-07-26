@@ -1,0 +1,23 @@
+@use 'src/Variables/Variables.scss'as *;
+
+.footer {
+    width: 100%;
+    height: 14vh;
+    position: fixed;
+    bottom: 0;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+
+    &__links {
+        display: flex;
+
+        &--images {
+            height: 40px;
+            padding: 10px;
+        }
+    }
+}

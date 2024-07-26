@@ -1,0 +1,14 @@
+@use 'src/Variables/Variables.scss'as *;
+
+.mobilenavbar {
+    height: 100vh;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__link {
+        margin: 30px;
+    }
+}
