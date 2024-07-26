@@ -1,4 +1,5 @@
 import "./AboutMe.scss";
+import profilePic from './../../Images/profile-pic.jpeg';
 
 const AboutMe = () => {
   return (
@@ -6,7 +7,7 @@ const AboutMe = () => {
       <div className="aboutme">
         <h1 className="aboutme__heading">About me</h1>
         <img
-          src="./images/profile-pic.jpeg"
+          src={profilePic}
           alt="image of myself"
           className="aboutme__image"
         />
