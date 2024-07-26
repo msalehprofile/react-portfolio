@@ -1,0 +1,23 @@
+@use 'src/Variables/Variables.scss'as *;
+
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    align-items: center;
+
+    &__heading {
+        padding: 0px 0px 20px;
+        text-align: center;
+    }
+
+    &__image {
+        width: 80%;
+        padding: 0 0 20px;
+    }
+
+    &__paragraph {
+        padding: 15px 10px 20px;
+
+    }
+}
