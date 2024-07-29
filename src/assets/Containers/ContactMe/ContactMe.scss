@@ -1,0 +1,17 @@
+@use 'src/Variables/Variables.scss'as *;
+
+.contactpage {
+    &__heading {
+        padding: 120px 30px 30px;
+    }
+
+    &__subheading {
+        padding: 5px 30px 5px;
+        font-weight: bolder;
+    }
+
+    &__link {
+        padding: 1px 30px 30px;
+    }
+    
+}
