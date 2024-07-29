@@ -5,6 +5,7 @@ import NavBar from "./assets/Components/NavBar/NavBar";
 import { useState } from "react";
 import MobileNavMenu from "./assets/Components/MobileNavMenu/MobileNavMenu";
 import Projects from "./assets/Containers/Projects/Projects";
+import ContactMe from "./assets/Containers/ContactMe/ContactMe";
 
 function App() {
   const pageName = "Molly Saleh";
@@ -35,6 +36,7 @@ function App() {
         <Routes>
           <Route path="/react-portfolio/" element={<HomePage />} />
           <Route path="/react-portfolio/projects" element={<Projects/>} />
+          <Route path="/react-portfolio/stayintouch" element={<ContactMe/>} />
         </Routes>
 
       </BrowserRouter>
