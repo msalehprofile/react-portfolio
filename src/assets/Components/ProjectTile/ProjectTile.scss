@@ -1,0 +1,38 @@
+@use 'src/Variables/Variables.scss'as *;
+
+
+.project-tile {
+    width: 75%;
+    background-color: aqua;
+    border-radius: 10%;
+    padding: 0 30px 10px;
+    margin: 20px;
+
+    &__img {
+        width: 80%;
+        align-items: center;
+        padding: 30px 30px 15px;
+        border-radius: 8px;
+    }
+
+    &__language {
+        align-items: flex-start;
+        padding-top: 5px;
+    }
+
+    &__name {
+        padding-bottom: 7px;
+    }
+    
+    &__description {
+        padding: 5px 0;
+    }
+
+    &__button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin: 4px 0 10px 0;
+    }
+}
