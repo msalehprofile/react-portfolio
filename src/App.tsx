@@ -4,7 +4,6 @@ import HomePage from "./assets/Containers/HomePage/HomePage";
 import NavBar from "./assets/Components/NavBar/NavBar";
 import { useState } from "react";
 import MobileNavMenu from "./assets/Components/MobileNavMenu/MobileNavMenu";
-import Footer from "./assets/Components/Footer/Footer";
 import Projects from "./assets/Containers/Projects/Projects";
 
 function App() {
@@ -37,7 +36,7 @@ function App() {
           <Route path="/react-portfolio/" element={<HomePage />} />
           <Route path="/react-portfolio/projects" element={<Projects/>} />
         </Routes>
-        <Footer />
+
       </BrowserRouter>
     </>
   );

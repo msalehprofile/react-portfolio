@@ -10,6 +10,7 @@ type ProjectTileProps = {
   projectBackEndCode?: string;
   projectFrontEndCode?: string;
   projectDesc: string;
+  projectImage: string;
 };
 
 const ProjectTile = ({
@@ -19,13 +20,14 @@ const ProjectTile = ({
   projectCodeLink,
   projectDesc,
   projectFrontEndCode,
-  projectBackEndCode
+  projectBackEndCode,
+  projectImage
 }: ProjectTileProps) => {
   return (
     <div>
       <div className="project-tile">
         <img
-          src="./images/key-project.webp"
+          src={projectImage}
           alt="project image"
           className="project-tile__img"
         />
@@ -36,7 +38,7 @@ const ProjectTile = ({
           {projectCodeLink && (
             <Link to={projectCodeLink} target="_blank">
               <PersonalisedButton
-                label="Code"
+                label="Code </>"
                 size="large"
                 color="primary"
               />
@@ -54,8 +56,8 @@ const ProjectTile = ({
           {projectFrontEndCode && (
             <Link to={projectFrontEndCode} target="_blank">
               <PersonalisedButton
-                label="Front End Code"
-                size="large"
+                label="Front End Code </>"
+                size="medium"
                 color="primary"
               />
             </Link>
@@ -63,8 +65,8 @@ const ProjectTile = ({
           {projectBackEndCode && (
             <Link to={projectBackEndCode} target="_blank">
               <PersonalisedButton
-                label="Back End Code"
-                size="large"
+                label="Back End Code </>"
+                size="medium"
                 color="primary"
               />
             </Link>

@@ -1,1 +1,18 @@
 @use 'src/Variables/Variables.scss'as *;
+
+.projects {
+    &__heading {
+        padding: 120px 30px 30px;
+    }
+
+    &__summary {
+        padding: 10px 30px 30px;
+    }
+
+    &__carousel {
+        margin: 0px 10px;
+        height: 1000px;
+        z-index: 1;
+    }
+    
+}

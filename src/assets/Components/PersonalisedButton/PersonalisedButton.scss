@@ -2,16 +2,19 @@
 
 .button {
     padding: 15px;
-    margin: 20px 0px;
     border-radius: 30px;
     font-size: 18px;
 
     &__large{
         width:100%;
+        margin: 20px 0px;
+        padding: 15px 20px;
       }
     
       &__medium{
         width:75%;
+        align-self: center;
+        margin: 20px;
       }
     
       &__small{
