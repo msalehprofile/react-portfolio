@@ -56,7 +56,7 @@ const ProjectTile = ({
           {projectFrontEndCode && (
             <Link to={projectFrontEndCode} target="_blank">
               <PersonalisedButton
-                label="Front End Code </>"
+                label="FE Code </>"
                 size="medium"
                 color="primary"
               />
@@ -65,7 +65,7 @@ const ProjectTile = ({
           {projectBackEndCode && (
             <Link to={projectBackEndCode} target="_blank">
               <PersonalisedButton
-                label="Back End Code </>"
+                label="BE Code </>"
                 size="medium"
                 color="primary"
               />

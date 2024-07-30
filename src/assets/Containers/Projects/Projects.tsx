@@ -37,7 +37,7 @@ const Projects = () => {
       projectLiveLink: "https://github.com/msalehprofile/react-punk-api",
       projectCodeLink: "https://msalehprofile.github.io/react-punk-api/",
       projectDesc:
-        "First use of an API. Please note that due to using a local API, the live site is not fully functional",
+        "First use of an API.",
     },
     {
       projectName: "Hangman",
@@ -65,7 +65,7 @@ const Projects = () => {
       projectBackEndCode:
         "https://github.com/msalehprofile/backend-book-tracker",
       projectDesc:
-        "For the first full stack project I decided to create a book tracker. It is single person use, where a player can rate, review and list books they have read or want to read. Please note that due to using a local API, the live site is not fully functional.",
+        "For the first full stack project I decided to create a book tracker. It is single person use, where a player can rate, review and list books they have read or want to read.",
     },
     {
       projectName: "Budget Tracker",
@@ -76,7 +76,7 @@ const Projects = () => {
       projectBackEndCode:
         "https://github.com/msalehprofile/backend-spendingtracker",
       projectDesc:
-        "I pushed myself slightly further with this project by having my first attempt at authorisation and using multiple packages for the first time. The premise is a user being able to create an account and track what they have spent and where against personal budget plans. Please note that due to using a local API, the live site is not fully functional.",
+        "I pushed myself slightly further with this project by having my first attempt at authorisation and using multiple packages for the first time. The premise is a user being able to create an account and track what they have spent and where against personal budget plans. Please note that due to using a local API.",
     },
   ];
 
@@ -86,7 +86,13 @@ const Projects = () => {
       <p className="projects__summary">
         Below is a slide show of the projects that I am proud to share, I have
         included links to the code base and the live sites where possible.
+        Please note that due to not being in the position to host my own sites
+        the full stack applications are not fully functional.
       </p>
+      <ul className="projects__list">
+        <li>Front End = FE</li>
+        <li>Back End = BE</li>
+      </ul>
       <Carousel
         className="projects__carousel"
         autoPlay={false}

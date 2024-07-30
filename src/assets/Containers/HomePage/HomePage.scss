@@ -4,7 +4,32 @@
     height: auto;
     margin-bottom: 150px;
 
-    &__intro {
-        padding: 120px 60px 30px;
+    .Typewriter {
+        width: 50%;
+        padding: 125px 60px 30px;
+        font-family: $intro-font;
+        font-size: $intro-font-size;
+        font-weight: $intro-font-weight;
+    }
+
+    &__wave { 
+        position: relative;
+        width: 50%;
+        height: 50px;
+        text-align: center;
+        margin-left: 70px;
+    
+        &::before {
+            content: 'aaaaaaa';
+            text-align: center;
+            position: absolute;
+            font-size: 4em;
+            top: -52px;
+            left: 0;
+            color: transparent;
+            text-decoration: wavy;
+            text-decoration-color: $line-color;
+            text-decoration-line: underline;
+        }
     }
 }
