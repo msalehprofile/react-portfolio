@@ -6,6 +6,7 @@ const AboutMe = () => {
     <div>
       <div className="aboutme">
         <h1 className="aboutme__heading">About me</h1>
+        <p className="aboutme__underline"></p>
         <img
           src={profilePic}
           alt="image of myself"
