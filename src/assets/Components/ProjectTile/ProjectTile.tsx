@@ -21,7 +21,7 @@ const ProjectTile = ({
   projectDesc,
   projectFrontEndCode,
   projectBackEndCode,
-  projectImage
+  projectImage,
 }: ProjectTileProps) => {
   return (
     <div>
@@ -44,20 +44,12 @@ const ProjectTile = ({
               />
             </Link>
           )}
-          {projectLiveLink && (
-            <Link to={projectLiveLink} target="_blank">
-              <PersonalisedButton
-                label="Preview"
-                size="large"
-                color="primary"
-              />
-            </Link>
-          )}
+
           {projectFrontEndCode && (
             <Link to={projectFrontEndCode} target="_blank">
               <PersonalisedButton
                 label="FE Code </>"
-                size="medium"
+                size="large"
                 color="primary"
               />
             </Link>
@@ -66,7 +58,16 @@ const ProjectTile = ({
             <Link to={projectBackEndCode} target="_blank">
               <PersonalisedButton
                 label="BE Code </>"
-                size="medium"
+                size="large"
+                color="primary"
+              />
+            </Link>
+          )}
+          {projectLiveLink && (
+            <Link to={projectLiveLink} target="_blank">
+              <PersonalisedButton
+                label="Preview"
+                size="large"
                 color="primary"
               />
             </Link>

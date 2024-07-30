@@ -6,6 +6,7 @@ const ContactMe = () => {
   return (
     <div className="contactpage">
         <h2 className="contactpage__heading">Get in touch</h2>
+        <p className="contactpage__underline"></p>
         <p className="contactpage__subheading">Email:</p>
         <Link to="mailto:mollyhannia@hotmail.co.uk" target="_blank"><p className="contactpage__link">mollyhannia@hotmail.co.uk</p></Link>
         <p className="contactpage__subheading" >Linkedin:</p>

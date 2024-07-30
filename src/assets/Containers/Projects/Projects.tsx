@@ -34,10 +34,10 @@ const Projects = () => {
       projectName: "Punk API",
       projectImage: brewdogImage,
       projectLanguage: "Typescript",
-      projectLiveLink: "https://github.com/msalehprofile/react-punk-api",
-      projectCodeLink: "https://msalehprofile.github.io/react-punk-api/",
+      projectLiveLink: "https://msalehprofile.github.io/react-punk-api/",
+      projectCodeLink: "https://github.com/msalehprofile/react-punk-api",
       projectDesc:
-        "First use of an API.",
+        "First use of an API, where I have paginated a list of beers, along with creating the functionality to be able to filter by one or more options.",
     },
     {
       projectName: "Hangman",
@@ -60,6 +60,7 @@ const Projects = () => {
       projectName: "Book Tracker",
       projectImage: bookTracker,
       projectLanguage: "Typescript & Java",
+      projectLiveLink: "https://msalehprofile.github.io/frontend-book-tracker/",
       projectFrontEndCode:
         "https://github.com/msalehprofile/frontend-book-tracker",
       projectBackEndCode:
@@ -77,12 +78,14 @@ const Projects = () => {
         "https://github.com/msalehprofile/backend-spendingtracker",
       projectDesc:
         "I pushed myself slightly further with this project by having my first attempt at authorisation and using multiple packages for the first time. The premise is a user being able to create an account and track what they have spent and where against personal budget plans. Please note that due to using a local API.",
-    },
+        projectLiveLink: "https://github.com/msalehprofile/frontend-spendingtracker/deployments",
+      },
   ];
 
   return (
     <div className="projects">
       <h2 className="projects__heading">Projects</h2>
+      <p className="projects__underline"></p>
       <p className="projects__summary">
         Below is a slide show of the projects that I am proud to share, I have
         included links to the code base and the live sites where possible.

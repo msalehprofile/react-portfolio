@@ -13,5 +13,25 @@
     &__link {
         padding: 1px 30px 30px;
     }
+
+    &__underline { 
+        position: relative;
+        width: 20%;
+        text-align: center;
+        padding-left: -120px;
+    
+        &::before {
+            content: 'aiiiii';
+            z-index: -1;
+            text-align: center;
+            position: absolute;
+            font-size: 5em;
+            top: -118px;
+            left: 1;
+            color: transparent;
+            text-decoration-color: $line-color;
+            text-decoration-line: underline;
+        }
+    }
     
 }
