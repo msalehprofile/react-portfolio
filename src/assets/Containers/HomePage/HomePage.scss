@@ -71,7 +71,7 @@
 
 @media screen and (min-width: 1000px) {
     .homepage {
-        margin-bottom: 200px;
+        margin-bottom: 100px;
 
         .Typewriter {
             padding: 175px 120px 0px;
@@ -82,6 +82,18 @@
             &::before {
                 content: 'aaaaaaaaaaaaaaaaaaaa';
                 top: -50px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .homepage {
+    
+        &__wave {             
+            &::before {
+                content: 'aaaaaaaaaaaaaaaaaaaa';
+                top: -80px;
             }
         }
     }

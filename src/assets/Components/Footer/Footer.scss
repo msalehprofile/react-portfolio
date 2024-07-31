@@ -48,8 +48,9 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
     .footer {
+        height: 8vh;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -63,5 +64,11 @@
         &__email {
             margin-left: 50px;
         }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer {
+        height: 14vh;
     }
 }
