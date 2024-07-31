@@ -12,7 +12,7 @@ const Footer = () => {
         <Link to="https://github.com/msalehprofile" target="_blank"> <img src={github} alt="" className="footer__links--images"/></Link>
         <Link to="https://www.linkedin.com/in/molly-saleh-b2b41b188/" target="_blank"> <img src={linkedIn} alt="" className="footer__links--images"/></Link>
       </div>
-      <Link to="mailto:mollyhannia@hotmail.co.uk" target="_blank"> <p>mollyhannia@hotmail.co.uk</p></Link>
+      <Link to="mailto:mollyhannia@hotmail.co.uk" target="_blank"> <p className="footer__email">mollyhannia@hotmail.co.uk</p></Link>
     </div>
   );
 };

@@ -1,54 +1,102 @@
-@use 'src/Variables/Variables.scss'as *;
+@use "src/Variables/Variables.scss" as *;
 
 .navbar {
-    width: 100%;
-    height: 9vh;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: $primary-color;
-    z-index: 2;
+  width: 100%;
+  height: 9vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: $primary-color;
+  z-index: 2;
 
-    &__name {
-        padding-right: 100px;
-        color: $color-white;
-        font-family: $name-font;
-        font-weight: $name-weight;
+  &__name {
+    padding-right: 100px;
+    color: $color-white;
+    font-family: $name-font;
+    font-weight: $name-weight;
+  }
+
+  &__links-flex {
+    display: none;
+  }
+
+  &__toggle {
+    display: inline-block;
+    cursor: pointer;
+
+    &--bar1,
+    &--bar2,
+    &--bar3 {
+      width: 30px;
+      height: 2px;
+      background-color: $color-white;
+      margin: 6px 0;
+    }
+  }
+
+  &__close {
+    display: inline-block;
+    cursor: pointer;
+
+    &--bar1 {
+      width: 30px;
+      height: 2px;
+      background-color: $color-white;
+      transform: rotate(45deg);
     }
 
-    &__link {
-        display: none;
+    &--bar2 {
+      width: 30px;
+      height: 2px;
+      background-color: $color-white;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .navbar {
+    justify-content: space-between;
+  
+    &__name {
+      padding-left: 70px;
+    }
+  
+    &__toggle {
+      padding-right: 70px;
+    }
+  
+    &__close {
+      padding-right: 70px;
+  }
+}
+}
+
+@media screen and (min-width: 1000px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+
+    &__name {
+      padding-left: 100px;
+    }
+
+    &__links-flex {
+      display: flex;
+
+      &__option {
+        color: $color-white;
+        padding-right: 80px;
+      }
     }
 
     &__toggle {
-        display: inline-block;
-        cursor: pointer;
-
-        &--bar1,  &--bar2,  &--bar3 {
-            width: 30px;
-            height: 2px;
-            background-color: $color-white;
-            margin: 6px 0;
-        }
+      display: none;
     }
 
     &__close {
-        display: inline-block;
-        cursor: pointer;
-
-        &--bar1 {
-            width: 30px;
-            height: 2px;
-            background-color: $color-white;
-            transform:rotate(45deg)
-        }
-
-        &--bar2 {
-            width: 30px;
-            height: 2px;
-            background-color: $color-white;
-            transform:rotate(-45deg)
-        }
+      display: none;
     }
+  }
 }
