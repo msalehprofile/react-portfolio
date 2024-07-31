@@ -1,4 +1,4 @@
-import ProjectTile from "../../Components/ProjectTile/ProjectTile";
+import ProjectTile, { ProjectTileProps } from "../../Components/ProjectTile/ProjectTile";
 import "./Projects.scss";
 import Carousel from "react-material-ui-carousel";
 import brewdogImage from "./../../Images/projects/brewdog.png";
@@ -48,15 +48,6 @@ const Projects = () => {
         "First project created in Java. This is a game of Hangman, where users can either plan single or double player and select the level they wish to play.",
     },
     {
-      projectName: "Card Games",
-      projectImage: rummy,
-      projectLanguage: "Java",
-      projectCodeLink:
-        "https://github.com/msalehprofile/java-pairprogramming-games",
-      projectDesc:
-        "First pair-programming project. We created a deck of cards, along with actions as a pair and then developed our own card games. I worked on the Rummy section of this project, which is playable from 2-4 players.",
-    },
-    {
       projectName: "Book Tracker",
       projectImage: bookTracker,
       projectLanguage: "Typescript & Java",
@@ -80,7 +71,26 @@ const Projects = () => {
         "I pushed myself slightly further with this project by having my first attempt at authorisation and using multiple packages for the first time. The premise is a user being able to create an account and track what they have spent and where against personal budget plans. Please note that due to using a local API.",
         projectLiveLink: "https://github.com/msalehprofile/frontend-spendingtracker/deployments",
       },
+      {
+        projectName: "Card Games",
+        projectImage: rummy,
+        projectLanguage: "Java",
+        projectCodeLink:
+          "https://github.com/msalehprofile/java-pairprogramming-games",
+        projectDesc:
+          "First pair-programming project. We created a deck of cards, along with actions as a pair and then developed our own card games. I worked on the Rummy section of this project, which is playable from 2-4 players.",
+      },
   ];
+
+  const pairProjects = (projects: ProjectTileProps[]) => {
+    const pairedProjects = [];
+    for (let i = 0; i < projects.length; i += 2) {
+      pairedProjects.push(projects.slice(i, i + 2));
+    }
+    return pairedProjects;
+  };
+
+  const pairedProjects = pairProjects(projects);
 
   return (
     <div className="projects">
@@ -116,6 +126,36 @@ const Projects = () => {
             projectCodeLink={projects.projectCodeLink}
             projectDesc={projects.projectDesc}
           />
+        ))}
+      </Carousel>
+      <Carousel
+        className="projects__carousel-desktop"
+        autoPlay={false}
+        indicators={false}
+        navButtonsAlwaysVisible={true}
+        navButtonsProps={{
+          className: "projects__carousel-desktop--nav-button",  // Add a custom class to the buttons
+        }}
+        
+        swipe={false}
+        animation="slide"
+      >
+        {pairedProjects.map((pair, i) => (
+          <div className="projects__carousel-desktop--pair" key={i}>
+            {pair.map((project, j) => (
+              <ProjectTile
+                key={j}
+                projectImage={project.projectImage}
+                projectFrontEndCode={project.projectFrontEndCode}
+                projectBackEndCode={project.projectBackEndCode}
+                projectName={project.projectName}
+                projectLanguage={project.projectLanguage}
+                projectLiveLink={project.projectLiveLink}
+                projectCodeLink={project.projectCodeLink}
+                projectDesc={project.projectDesc}
+              />
+            ))}
+          </div>
         ))}
       </Carousel>
       <Footer />

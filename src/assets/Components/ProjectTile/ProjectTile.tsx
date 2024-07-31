@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import PersonalisedButton from "../PersonalisedButton/PersonalisedButton";
 import "./ProjectTile.scss";
 
-type ProjectTileProps = {
+export type ProjectTileProps = {
   projectName: string;
   projectLanguage: string;
   projectLiveLink?: string;
