@@ -1,42 +1,140 @@
-@use 'src/Variables/Variables.scss'as *;
+@use "src/Variables/Variables.scss" as *;
 
 .aboutme {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 30px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
+  align-items: center;
 
-    &__heading {
-        padding: 0px 0px 20px;
-        text-align: center;
+  &__heading {
+    padding: 0px 0px 20px;
+    text-align: center;
+  }
+
+  &__underline {
+    position: relative;
+    width: 35%;
+    padding-left: -120px;
+
+    &::before {
+      content: "aaii";
+      z-index: -1;
+      position: absolute;
+      font-size: 6em;
+      top: -125px;
+      left: 0;
+      color: transparent;
+      text-decoration-color: $line-color;
+      text-decoration-line: underline;
     }
+  }
 
-    &__underline { 
-        position: relative;
-        width: 35%;
-        text-align: center;
-        padding-left: -120px;
-    
-        &::before {
-            content: 'aaii';
-            z-index: -1;
-            text-align: center;
-            position: absolute;
-            font-size: 6em;
-            top: -125px;
-            left: 0;
-            color: transparent;
-            text-decoration-color: $line-color;
-            text-decoration-line: underline;
-        }
+  &__image {
+    width: 80%;
+    padding: 0 0 20px;
+  }
+
+  &__paragraph {
+    padding: 15px 10px 10px;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .aboutme {
+    &__underline {
+  
+      &::before {
+        padding-left: 30px;
+      }
     }
+  }
+}
 
-    &__image {
-        width: 80%;
-        padding: 0 0 20px;
+@media screen and (min-width: 750px) {
+  .aboutme {
+    &__underline {
+  
+      &::before {
+        padding-left: 70px;
+      }
     }
 
     &__paragraph {
-        padding: 15px 10px 10px;
+      padding: 15px 40px 10px;
     }
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .aboutme {
+    &__underline {
+  
+      &::before {
+        padding-left: 95px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .aboutme {
+    &__heading {
+      padding: 20px 0px 20px;
+      text-align: center;
+    }
+
+    &__underline {
+      &::before {
+        padding-left: 115px;
+      }
+    }
+
+    &__image {
+      padding: 20px 0 20px;
+    }
+
+    &__paragraph {
+      padding: 25px 50px 20px;
+    }
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .aboutme {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 0.5fr 1fr 1fr;
+    gap: 10px;
+    height: auto;
+    padding: 10px 120px;
+
+    &__heading {
+      grid-column: 2;
+      grid-row: 2;
+      text-align: left;
+    }
+    
+    &__image {
+      grid-column: 1;
+      grid-row: 1/5;
+      padding: 0;
+      width: 85%;
+    }
+
+    &__paragraph {
+      padding: 0;
+      grid-column: 2;
+      grid-row: 3;
+    }
+
+    &__underline {
+      &::before {
+        content: "aai";
+        padding-left: 14px;
+        font-size: 7em;
+        top: 48px;
+      }
+    }
+  }
 }

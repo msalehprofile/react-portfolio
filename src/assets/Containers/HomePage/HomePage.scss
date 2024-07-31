@@ -14,22 +14,87 @@
 
     &__wave { 
         position: relative;
-        width: 50%;
         height: 50px;
-        text-align: center;
-        margin-left: 70px;
-    
+        
         &::before {
+            width: 100%;
             content: 'aaaaaaa';
             text-align: center;
             position: absolute;
             font-size: 4em;
             top: -52px;
-            left: 0;
+            text-align: center;
             color: transparent;
             text-decoration: wavy;
             text-decoration-color: $line-color;
             text-decoration-line: underline;
+        }
+    }
+}
+
+
+@media screen and (min-width: 750px) {
+    .homepage {
+        .Typewriter {
+            width: 60%;
+            padding: 155px 120px 50px;
+
+        }
+    
+        &__wave {             
+            &::before {
+                content: 'aaaaaaaaaaaa';
+                top: -50px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .homepage {
+        margin-bottom: 200px;
+        .Typewriter {
+            width: 60%;
+            padding: 175px 120px 50px;
+
+        }
+    
+        &__wave {             
+            &::before {
+                content: 'aaaaaaaaaaaa';
+                top: -50px;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .homepage {
+        margin-bottom: 100px;
+
+        .Typewriter {
+            padding: 175px 120px 0px;
+            font-size: $intro-font-size-large;
+        }
+    
+        &__wave {             
+            &::before {
+                content: 'aaaaaaaaaaaaaaaaaaaa';
+                top: -50px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .homepage {
+    
+        &__wave {             
+            &::before {
+                content: 'aaaaaaaaaaaaaaaaaaaa';
+                top: -80px;
+            }
         }
     }
 }

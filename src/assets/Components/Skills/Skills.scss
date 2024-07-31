@@ -30,3 +30,23 @@
         }
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .skills {
+
+        &__description {
+            padding: 10px 0;
+        }
+
+        &__visual-grid {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            
+            .visual-grid__group{
+                padding: 5px 15px;
+            }
+            }
+        }
+}
