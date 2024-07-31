@@ -47,18 +47,18 @@ const Projects = () => {
       projectDesc:
         "First project created in Java. This is a game of Hangman, where users can either plan single or double player and select the level they wish to play.",
     },
-    {
-      projectName: "Book Tracker",
-      projectImage: bookTracker,
-      projectLanguage: "Typescript & Java",
-      projectLiveLink: "https://msalehprofile.github.io/frontend-book-tracker/",
-      projectFrontEndCode:
-        "https://github.com/msalehprofile/frontend-book-tracker",
-      projectBackEndCode:
-        "https://github.com/msalehprofile/backend-book-tracker",
-      projectDesc:
-        "For the first full stack project I decided to create a book tracker. It is single person use, where a player can rate, review and list books they have read or want to read.",
-    },
+    // {
+    //   projectName: "Book Tracker",
+    //   projectImage: bookTracker,
+    //   projectLanguage: "Typescript & Java",
+    //   projectLiveLink: "https://msalehprofile.github.io/frontend-book-tracker/",
+    //   projectFrontEndCode:
+    //     "https://github.com/msalehprofile/frontend-book-tracker",
+    //   projectBackEndCode:
+    //     "https://github.com/msalehprofile/backend-book-tracker",
+    //   projectDesc:
+    //     "For the first full stack project I decided to create a book tracker. It is single person use, where a player can rate, review and list books they have read or want to read.",
+    // },
     {
       projectName: "Budget Tracker",
       projectImage: budgetTracker,
