@@ -5,7 +5,7 @@ import brewdogImage from "./../../Images/projects/brewdog.png";
 import calculator from "./../../Images/projects/calc.png";
 import sudoku from "./../../Images/projects/sudoku.png";
 import budgetTracker from "./../../Images/projects/budgettracker.png";
-import bookTracker from "./../../Images/projects/booktracker.png";
+// import bookTracker from "./../../Images/projects/booktracker.png";
 import rummy from "./../../Images/projects/rummy.png";
 import hangman from "./../../Images/projects/hangman.png";
 import Footer from "../../Components/Footer/Footer";
@@ -68,7 +68,7 @@ const Projects = () => {
       projectBackEndCode:
         "https://github.com/msalehprofile/backend-spendingtracker",
       projectDesc:
-        "I pushed myself slightly further with this project by having my first attempt at authorisation and using multiple packages for the first time. The premise is a user being able to create an account and track what they have spent and where against personal budget plans. Please note that due to using a local API.",
+        "I pushed myself slightly further with this project by having my first attempt at authorisation and using multiple packages for the first time. The premise is a user being able to create an account and track what they have spent and where against personal budget plans.",
         projectLiveLink: "https://github.com/msalehprofile/frontend-spendingtracker/deployments",
       },
       {
