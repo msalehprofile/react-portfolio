@@ -45,7 +45,7 @@ const Projects = () => {
       projectLanguage: "Java",
       projectCodeLink: "https://github.com/msalehprofile/java-hangman",
       projectDesc:
-        "First project created in Java. This is a game of Hangman, where users can either plan single or double player and select the level they wish to play.",
+        "First project created in Java. This is a game of Hangman, where users can either play single or double player and select the level they wish to play.",
     },
     // {
     //   projectName: "Book Tracker",
@@ -69,7 +69,7 @@ const Projects = () => {
         "https://github.com/msalehprofile/backend-spendingtracker",
       projectDesc:
         "I pushed myself slightly further with this project by having my first attempt at authorisation and using multiple packages for the first time. The premise is a user being able to create an account and track what they have spent and where against personal budget plans.",
-        projectLiveLink: "https://github.com/msalehprofile/frontend-spendingtracker/deployments",
+        projectLiveLink: "https://msalehprofile.github.io/frontend-spendingtracker/",
       },
       {
         projectName: "Card Games",
