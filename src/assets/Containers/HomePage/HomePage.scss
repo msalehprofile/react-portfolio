@@ -169,3 +169,11 @@
         }
     }
 }
+
+@media screen and (min-width: 1350px) {
+    .homepage {
+        &__wave {             
+            display: none;
+        }
+    }
+}
