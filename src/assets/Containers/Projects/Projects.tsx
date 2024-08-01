@@ -9,8 +9,11 @@ import budgetTracker from "./../../Images/projects/budgettracker.png";
 import rummy from "./../../Images/projects/rummy.png";
 import hangman from "./../../Images/projects/hangman.png";
 import Footer from "../../Components/Footer/Footer";
+import { useEffect, useState } from "react";
 
 const Projects = () => {
+
+  const [projectPairs, setProjectPairs] = useState<ProjectTileProps[][]>([])
   const projects = [
     {
       projectName: "Calculator",
@@ -19,7 +22,7 @@ const Projects = () => {
       projectLiveLink: "https://msalehprofile.github.io/calculator-test/",
       projectCodeLink: "https://github.com/msalehprofile/calculator-test",
       projectDesc:
-        "A calculator created in Typescript. It has both portrait and landscape layout, as well as a day and night mode that changes based on the time of the day.",
+        "A calculator created in Typescript. It has both portrait and landscape layout, alongside having a day / night mode that automatically changes based on the time of the day.",
     },
     {
       projectName: "Suduko",
@@ -28,7 +31,7 @@ const Projects = () => {
       projectLiveLink: "https://msalehprofile.github.io/sudoku-game-challenge/",
       projectCodeLink: "https://github.com/msalehprofile/sudoku-game-challenge",
       projectDesc:
-        "A game of Suduko created using Typescript. The game consists of three levels and has multiple games to play at each level.",
+        "A game of Suduko created using Typescript. It consists of three main levels and has multiple games to play at each level.",
     },
     {
       projectName: "Punk API",
@@ -37,7 +40,7 @@ const Projects = () => {
       projectLiveLink: "https://msalehprofile.github.io/react-punk-api/",
       projectCodeLink: "https://github.com/msalehprofile/react-punk-api",
       projectDesc:
-        "First use of an API, where I have paginated a list of beers, along with creating the functionality to be able to filter by one or more options.",
+        "First use of an API, where I have paginated a list of beers and created the functionality to filter by one or more options.",
     },
     {
       projectName: "Hangman",
@@ -68,7 +71,7 @@ const Projects = () => {
       projectBackEndCode:
         "https://github.com/msalehprofile/backend-spendingtracker",
       projectDesc:
-        "I pushed myself slightly further with this project by having my first attempt at authorisation and using multiple packages for the first time. The premise is a user being able to create an account and track what they have spent and where against personal budget plans.",
+        "I pushed myself slightly further with this project by attempting authorisation and using multiple packages for the first time. The premise is a user being able to create an account, set up personal budget plans and track what they have spent against those ambitions.",
         projectLiveLink: "https://msalehprofile.github.io/frontend-spendingtracker/",
       },
       {
@@ -78,28 +81,30 @@ const Projects = () => {
         projectCodeLink:
           "https://github.com/msalehprofile/java-pairprogramming-games",
         projectDesc:
-          "First pair-programming project. We created a deck of cards, along with actions as a pair and then developed our own card games. I worked on the Rummy section of this project, which is playable from 2-4 players.",
+          "First pair-programming project. Together, we created a deck of cards along with actions before developing our own games. I bough to life the rummy section of this project, which can be played by 2-4 players.",
       },
   ];
 
   const pairProjects = (projects: ProjectTileProps[]) => {
-    const pairedProjects = [];
+    const pairedProjects  = [];
     for (let i = 0; i < projects.length; i += 2) {
       pairedProjects.push(projects.slice(i, i + 2));
     }
-    return pairedProjects;
+    setProjectPairs(pairedProjects)
   };
 
-  const pairedProjects = pairProjects(projects);
+  useEffect(() => {
+    pairProjects(projects)
+  }, []);
 
   return (
     <div className="projects">
       <h2 className="projects__heading">Projects</h2>
       <p className="projects__underline"></p>
       <p className="projects__summary">
-        Below is a slide show of the projects that I am proud to share, I have
+        Below is a slide show of the projects that I am proud to share! I have
         included links to the code base and the live sites where possible.
-        Please note that due to not being in the position to host my own sites
+        Please note that due to not being in the position to host my own sites,
         the full stack applications are not fully functional.
       </p>
       <ul className="projects__list">
@@ -134,17 +139,17 @@ const Projects = () => {
         indicators={false}
         navButtonsAlwaysVisible={true}
         navButtonsProps={{
-          className: "projects__carousel-desktop--nav-button",  // Add a custom class to the buttons
+          className: "projects__carousel-desktop--nav-button",  
         }}
-        
         swipe={false}
         animation="slide"
+        strictIndexing={true} 
       >
-        {pairedProjects.map((pair, i) => (
+        {projectPairs.map((pair, i) => (
           <div className="projects__carousel-desktop--pair" key={i}>
-            {pair.map((project, j) => (
+            {pair.map((project, i) => (
               <ProjectTile
-                key={j}
+                key={i}
                 projectImage={project.projectImage}
                 projectFrontEndCode={project.projectFrontEndCode}
                 projectBackEndCode={project.projectBackEndCode}
