@@ -3,10 +3,14 @@
 .homepage {
     height: auto;
     margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .Typewriter {
-        width: 50%;
-        padding: 125px 60px 30px;
+        align-items: left;
+        width: 70%;
+        padding: 14vh 0px 30px;
         font-family: $intro-font;
         font-size: $intro-font-size;
         font-weight: $intro-font-weight;
@@ -14,166 +18,110 @@
 
     &__wave { 
         position: relative;
-        height: 50px;
-        
-        &::before {
-            width: 100%;
-            content: 'aaaaaaa';
-            text-align: center;
-            position: absolute;
-            font-size: 4em;
-            top: -52px;
-            text-align: center;
-            color: transparent;
-            text-decoration: wavy;
-            text-decoration-color: $line-color;
-            text-decoration-line: underline;
-        }
+        height: 8px;
+        background-color: $line-color;
+        place-items: center;
+        width: 70%;
+        margin: 10px 0 30px;
     }
 }
 
-@media screen and (min-width: 667px) {
-    .homepage {
-        .Typewriter {
-            width: 70%;
-            padding: 90px 60px 50px;
-        }
-    }
-}
+// @media screen and (min-width: 667px) {
+//     .homepage {
+//         .Typewriter {
+//             width: 70%;
+//             padding: 12vh 60px 50px;
+//         }
+//     }
+// }
 
-@media screen and (min-width: 740px) {
-    .homepage {
-        .Typewriter {
-            padding: 90px 60px 50px;
-        }
-    }
-}
+// @media screen and (min-width: 740px) {
+//     .homepage {
+//         .Typewriter {
+//             padding: 90px 60px 50px;
+//         }
+//     }
+// }
 
-@media screen and (min-width: 750px) {
-    .homepage {
-        .Typewriter {
-            width: 60%;
-            padding: 155px 120px 50px;
+// @media screen and (min-width: 750px) {
+//     .homepage {
+//         .Typewriter {
+//             width: 60%;
+//             padding: 155px 120px 50px;
 
-        }
-    
-        &__wave {             
-            &::before {
-                content: 'aaaaaaaaaaaa';
-                top: -50px;
-            }
-        }
-    }
-}
+//         }
+//     }
+// }
 
-@media screen and (min-width: 820px) {
-    .homepage {
-        .Typewriter {
-            padding: 200px 120px 50px;
-        }
-    }
-}
+// @media screen and (min-width: 820px) {
+//     .homepage {
+//         .Typewriter {
+//             padding: 200px 120px 50px;
+//         }
+//     }
+// }
 
-@media screen and (min-width: 844px) {
-    .homepage {
-        .Typewriter {
-            padding: 100px 120px 50px;
-        }
-    }
-}
+// @media screen and (min-width: 844px) {
+//     .homepage {
+//         .Typewriter {
+//             padding: 100px 120px 50px;
+//         }
+//     }
+// }
 
-@media screen and (min-width: 853px) {
-    .homepage {
-        .Typewriter {
-            padding: 200px 120px 50px;
-        }
-    }
-}
+// @media screen and (min-width: 853px) {
+//     .homepage {
+//         .Typewriter {
+//             padding: 200px 120px 50px;
+//         }
+//     }
+// }
 
 @media screen and (min-width: 863px) {
     .homepage {
         margin-bottom: 200px;
         .Typewriter {
             width: 60%;
-            padding: 105px 120px 50px;
+            // padding: 105px 120px 50px;
 
         }
-    
-        &__wave {             
-            &::before {
-                content: 'aaaaaaaaaaaa';
-                top: -50px;
-            }
-        }
+
     }
 }
 
-@media screen and (min-width: 912px) {
-    .homepage {
-        .Typewriter {
-            padding: 230px 120px 50px;
-        }
-    }
-}
+// @media screen and (min-width: 912px) {
+//     .homepage {
+//         .Typewriter {
+//             padding: 230px 120px 50px;
+//         }
+//     }
+// }
 
-@media screen and (min-width: 914px) {
-    .homepage {
-        .Typewriter {
-            padding: 130px 120px 50px;
-        }
-    }
-}
+// @media screen and (min-width: 914px) {
+//     .homepage {
+//         .Typewriter {
+//             padding: 130px 120px 50px;
+//         }
+//     }
+// }
 
 @media screen and (min-width: 1000px) {
     .homepage {
         margin-bottom: 200px;
 
         .Typewriter {
-            padding: 175px 120px 0px;
+            // padding: 175px 120px 0px;
             font-size: $intro-font-size-large;
         }
-    
-        &__wave {             
-            &::before {
-                content: 'aaaaaaaaaaaaaaaaaaaa';
-                top: -50px;
-            }
-        }
     }
 }
 
-@media screen and (min-width: 1200px) {
-    .homepage {
-        &__wave {             
-            &::before {
-                content: 'aaaaaaaaaaaaaaaaaaaa';
-                top: -90px;
-            }
-        }
-    }
-}
 
-@media screen and (min-width: 1250px) {
-    .homepage {
-        &__wave {             
-            &::before {
-                top: -110px;
-            }
-        }
-    }
-}
-@media screen and (min-width: 1300px) {
-    .homepage {
-        .Typewriter {
-            padding: 200px 120px 0px;
-        }
-    }
-}
+// @media screen and (min-width: 1300px) {
+//     .homepage {
+//         .Typewriter {
+//             padding: 200px 120px 0px;
+//         }
+//     }
+// }
 
-@media screen and (min-width: 1350px) {
-    .homepage {
-        &__wave {             
-            display: none;
-        }
-    }
-}
