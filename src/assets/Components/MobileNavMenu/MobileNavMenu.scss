@@ -1,15 +1,32 @@
-@use 'src/Variables/Variables.scss'as *;
+@use "src/Variables/Variables.scss" as *;
 
 .mobilenavbar {
-    height: 35vh;
+  height: 35vh;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  padding-top: 85px;
+  background-color: $tile-color;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+
+  &__link {
+    margin: 30px;
+  }
+}
+
+@media screen and (min-width: 667px) {
+  .mobilenavbar {
+    height: 50vh;
     display: flex;
-    padding-top: 85px;
-    background-color: $tile-color;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    position: fixed;
+    padding-top: 30px;
 
     &__link {
-        margin: 30px;
+      margin: 15px;
     }
+  }
 }

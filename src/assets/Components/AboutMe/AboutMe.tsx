@@ -19,15 +19,15 @@ const AboutMe = () => {
           (please see below for more detail).
           <br />
           <br />
-          As well as learning the fundamentals of each language I also completed
+          In addition to learning the fundamentals of each language, I also completed
           various projects where I showcased the skills I learnt. 
           <br />
           <br />
-          My previous experience working in a merchandising environment
-          enabled me to developed strong problem solving skills and the ability
+          My previous work experience within a merchandising environment
+          enabled me to develop strong analytical problem solving skills and the ability
           to be very focused on the small details of projects. I will be able to
           transfer these skills to this new avenue and along with being a driven
-          individual hoping to ensure a long and successful career.
+          individual, hope to ensure a long and successful career.
           <br />
           <br />
           Head over to the project section to have a look at what I can create!

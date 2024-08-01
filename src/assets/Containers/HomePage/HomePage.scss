@@ -32,6 +32,22 @@
     }
 }
 
+@media screen and (min-width: 667px) {
+    .homepage {
+        .Typewriter {
+            width: 70%;
+            padding: 90px 60px 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 740px) {
+    .homepage {
+        .Typewriter {
+            padding: 90px 60px 50px;
+        }
+    }
+}
 
 @media screen and (min-width: 750px) {
     .homepage {
@@ -50,12 +66,36 @@
     }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 820px) {
+    .homepage {
+        .Typewriter {
+            padding: 200px 120px 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 844px) {
+    .homepage {
+        .Typewriter {
+            padding: 100px 120px 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 853px) {
+    .homepage {
+        .Typewriter {
+            padding: 200px 120px 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 863px) {
     .homepage {
         margin-bottom: 200px;
         .Typewriter {
             width: 60%;
-            padding: 175px 120px 50px;
+            padding: 105px 120px 50px;
 
         }
     
@@ -68,10 +108,25 @@
     }
 }
 
+@media screen and (min-width: 912px) {
+    .homepage {
+        .Typewriter {
+            padding: 230px 120px 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 914px) {
+    .homepage {
+        .Typewriter {
+            padding: 130px 120px 50px;
+        }
+    }
+}
 
 @media screen and (min-width: 1000px) {
     .homepage {
-        margin-bottom: 100px;
+        margin-bottom: 200px;
 
         .Typewriter {
             padding: 175px 120px 0px;
@@ -81,7 +136,7 @@
         &__wave {             
             &::before {
                 content: 'aaaaaaaaaaaaaaaaaaaa';
-                top: -120px;
+                top: -50px;
             }
         }
     }
@@ -89,12 +144,28 @@
 
 @media screen and (min-width: 1200px) {
     .homepage {
-    
         &__wave {             
             &::before {
                 content: 'aaaaaaaaaaaaaaaaaaaa';
                 top: -90px;
             }
+        }
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .homepage {
+        &__wave {             
+            &::before {
+                top: -110px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1300px) {
+    .homepage {
+        .Typewriter {
+            padding: 200px 120px 0px;
         }
     }
 }

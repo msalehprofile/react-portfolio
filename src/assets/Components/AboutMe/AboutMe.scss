@@ -13,16 +13,17 @@
 
   &__underline {
     position: relative;
-    width: 35%;
-    padding-left: -120px;
+    width: 100%;
 
     &::before {
+      width: 100%;
       content: "aaii";
       z-index: -1;
       position: absolute;
       font-size: 6em;
+      padding-left: 20px;
       top: -125px;
-      left: 0;
+      text-align: center;
       color: transparent;
       text-decoration-color: $line-color;
       text-decoration-line: underline;
@@ -39,39 +40,11 @@
   }
 }
 
-@media screen and (min-width: 540px) {
-  .aboutme {
-    &__underline {
-  
-      &::before {
-        padding-left: 30px;
-      }
-    }
-  }
-}
-
 @media screen and (min-width: 750px) {
   .aboutme {
-    &__underline {
-  
-      &::before {
-        padding-left: 70px;
-      }
-    }
 
     &__paragraph {
       padding: 15px 40px 10px;
-    }
-  }
-}
-
-@media screen and (min-width: 850px) {
-  .aboutme {
-    &__underline {
-  
-      &::before {
-        padding-left: 95px;
-      }
     }
   }
 }
@@ -81,12 +54,6 @@
     &__heading {
       padding: 20px 0px 20px;
       text-align: center;
-    }
-
-    &__underline {
-      &::before {
-        padding-left: 115px;
-      }
     }
 
     &__image {
@@ -130,6 +97,7 @@
 
     &__underline {
       &::before {
+        text-align: left;
         content: "aai";
         padding-left: 14px;
         font-size: 7em;
@@ -142,7 +110,7 @@
   .aboutme {
     &__underline {
       &::before {
-        top: 78px;
+        top: 88px;
       }
     }
   }

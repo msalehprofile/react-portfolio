@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: space-evenly;
   background-color: $primary-color;
-  z-index: 2;
+  z-index: 4;
 
   &__name {
     padding-right: 100px;
@@ -55,8 +55,9 @@
   }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 667px) {
   .navbar {
+    height: 10vh;
     justify-content: space-between;
   
     &__name {
@@ -73,13 +74,14 @@
 }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
   .navbar {
+    height: 12vh;
     display: flex;
     justify-content: space-between;
 
     &__name {
-      padding-left: 100px;
+      padding-left: 40px;
     }
 
     &__links-flex {
@@ -98,6 +100,24 @@
     &__close {
       display: none;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    height: 7vh;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .navbar {
+    height: 12vh;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .navbar {
+    height: 10vh;
   }
 }
 
