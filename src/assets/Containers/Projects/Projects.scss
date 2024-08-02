@@ -37,33 +37,36 @@
 
 @media screen and (min-width: 720px) {
   .projects {
-    padding-bottom: 150px;
+    margin-bottom: 150px;
   }
 }
 
 @media screen and (min-width: 740px) {
   .projects {
-    padding-bottom: 150px;
+   padding-bottom: 50px;
     &__carousel {
       display: none;
     }
 
     &__carousel-desktop {
       display: block;
+      height: 650px;
 
       &--pair {
         width: 90%;
         display: grid;
         place-items: center;
+        align-items: center;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         padding: 0;
-        margin-left: 50px;
+        margin-left: 20px;
         overflow: hidden;
+        margin-bottom: 250px;
       }
 
       .projects__carousel-desktop--nav-button {
-        margin: 30px 30px;
+        margin: -400px 8vw;
       }
     }
   }
@@ -73,9 +76,7 @@
   .projects {
 
     &__carousel {
-      margin-left: 90px;
-      height: 950px;
-      z-index: 1;
+      margin-left: 80px;
     }
   }
 }
@@ -83,7 +84,7 @@
 
 @media screen and (min-width: 1050px) {
   .projects {
-    padding-bottom: 150px;
+    margin-bottom: 100px;
 
     &__carousel-desktop {
       &--pair {

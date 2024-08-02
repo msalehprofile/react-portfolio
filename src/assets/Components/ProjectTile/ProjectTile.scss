@@ -37,11 +37,11 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 740px) {
   .project-tile {
     width: 60%;
     padding: 10px 20px 15px;
-    margin: 40px 100px 150px;
+    margin: 0px 10vw 0px;
 
     &__language {
       font-size: $project-tile-language-size-desktop;
@@ -56,3 +56,16 @@
     }
   }
 }
+
+// @media screen and (min-width: 850px) {
+//   .project-tile {
+//     margin: 0px 90px 0px;
+//   }
+// }
+
+
+// @media screen and (min-width: 1500px) {
+//   .project-tile {
+//     margin: 0px 120px 0px;
+//   }
+// }

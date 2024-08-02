@@ -16,6 +16,23 @@ const Projects = () => {
   const [projectPairs, setProjectPairs] = useState<ProjectTileProps[][]>([])
   const projects = [
     {
+      projectName: "Punk API",
+      projectImage: brewdogImage,
+      projectLanguage: "Typescript",
+      projectLiveLink: "https://msalehprofile.github.io/react-punk-api/",
+      projectCodeLink: "https://github.com/msalehprofile/react-punk-api",
+      projectDesc:
+        "First use of an API, where I have paginated a list of beers and created the functionality to filter by one or more options.",
+    },
+    {
+      projectName: "Hangman",
+      projectImage: hangman,
+      projectLanguage: "Java",
+      projectCodeLink: "https://github.com/msalehprofile/java-hangman",
+      projectDesc:
+        "First project created in Java. This is a game of Hangman, where users can either play single or double player and select the level they wish to play.",
+    },
+    {
       projectName: "Calculator",
       projectImage: calculator,
       projectLanguage: "Typescript",
@@ -33,23 +50,7 @@ const Projects = () => {
       projectDesc:
         "A game of Suduko created using Typescript. It consists of three main levels and has multiple games to play at each level.",
     },
-    {
-      projectName: "Punk API",
-      projectImage: brewdogImage,
-      projectLanguage: "Typescript",
-      projectLiveLink: "https://msalehprofile.github.io/react-punk-api/",
-      projectCodeLink: "https://github.com/msalehprofile/react-punk-api",
-      projectDesc:
-        "First use of an API, where I have paginated a list of beers and created the functionality to filter by one or more options.",
-    },
-    {
-      projectName: "Hangman",
-      projectImage: hangman,
-      projectLanguage: "Java",
-      projectCodeLink: "https://github.com/msalehprofile/java-hangman",
-      projectDesc:
-        "First project created in Java. This is a game of Hangman, where users can either play single or double player and select the level they wish to play.",
-    },
+
     // {
     //   projectName: "Book Tracker",
     //   projectImage: bookTracker,
@@ -71,7 +72,7 @@ const Projects = () => {
       projectBackEndCode:
         "https://github.com/msalehprofile/backend-spendingtracker",
       projectDesc:
-        "I pushed myself slightly further with this project by attempting authorisation and using multiple packages for the first time. The premise is a user being able to create an account, set up personal budget plans and track what they have spent against those ambitions.",
+        "My first attempt at authorisation and using multiple packages for the first time. The user is able to create an account, set up personal budget plans and track what they have spent against those ambitions.",
         projectLiveLink: "https://msalehprofile.github.io/frontend-spendingtracker/",
       },
       {
