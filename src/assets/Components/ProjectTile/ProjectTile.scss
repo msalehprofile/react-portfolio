@@ -1,58 +1,58 @@
-@use 'src/Variables/Variables.scss'as *;
+@use "src/Variables/Variables.scss" as *;
 
 .project-tile {
-    width: 75%;
-    background-color: $tile-color;
-    border-radius: 8%;
-    padding: 10px 30px 15px;
-    margin: 20px;
+  width: 75%;
+  background-color: $tile-color;
+  border-radius: 8%;
+  padding: 10px 30px 15px;
+  margin: 20px;
 
-    &__img {
-        width: 80%;
-        align-items: center;
-        padding: 30px 30px 15px;
-        border-radius: 8px;
-    }
+  &__img {
+    width: 80%;
+    align-items: center;
+    padding: 30px 30px 15px;
+    border-radius: 8px;
+  }
 
-    &__language {
-        align-items: flex-start;
-        padding-top: 5px;
-    }
+  &__language {
+    align-items: flex-start;
+    padding-top: 5px;
+  }
 
-    &__name {
-        padding-bottom: 7px;
-    }
-    
-    &__description {
-        padding: 5px 0;
-    }
+  &__name {
+    padding-bottom: 7px;
+  }
 
-    &__button {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 4px 0 10px 0;
-    }
+  &__description {
+    padding: 5px 0;
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 4px 0 10px 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .project-tile {
-        width: 60%;
-        padding: 10px 20px 15px;
-        margin: 40px 100px 150px;
-    
-        &__language {
-            font-size: $project-tile-language-size-desktop;
-        }
-    
-        &__name {
-            font-size: $project-tile-title-size-desktop;
-        }
-        
-        &__description {
-            font-size: $project-tile-font-size-desktop;
-        }
+  .project-tile {
+    width: 60%;
+    padding: 10px 20px 15px;
+    margin: 40px 100px 150px;
+
+    &__language {
+      font-size: $project-tile-language-size-desktop;
+    }
+
+    &__name {
+      font-size: $project-tile-title-size-desktop;
+    }
+
+    &__description {
+      font-size: $project-tile-font-size-desktop;
     }
   }
+}

@@ -7,27 +7,19 @@
   align-items: center;
 
   &__heading {
-    padding: 0px 0px 20px;
     text-align: center;
+    margin: 0;
   }
 
   &__underline {
     position: relative;
-    width: 100%;
-
-    &::before {
-      width: 100%;
-      content: "aaii";
-      z-index: -1;
-      position: absolute;
-      font-size: 6em;
-      padding-left: 20px;
-      top: -125px;
-      text-align: center;
-      color: transparent;
-      text-decoration-color: $line-color;
-      text-decoration-line: underline;
-    }
+    width: 160px;
+    height: 12px;
+    top: -14px;
+    margin-left: 55px;
+    z-index: -1;
+    background-color: $line-color;
+    margin-bottom: 10px;
   }
 
   &__image {
@@ -42,7 +34,6 @@
 
 @media screen and (min-width: 750px) {
   .aboutme {
-
     &__paragraph {
       padding: 15px 40px 10px;
     }
@@ -52,7 +43,7 @@
 @media screen and (min-width: 1000px) {
   .aboutme {
     &__heading {
-      padding: 20px 0px 20px;
+      padding: 20px 0px 0px;
       text-align: center;
     }
 
@@ -73,8 +64,9 @@
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 0.5fr 1fr 1fr;
     gap: 10px;
-    height: auto;
+    height: 80vh;
     padding: 10px 120px;
+    margin: 40px ;
 
     &__heading {
       grid-column: 2;
@@ -96,20 +88,12 @@
     }
 
     &__underline {
-      &::before {
-        text-align: left;
-        content: "aai";
-        padding-left: 14px;
-        font-size: 7em;
-        top: 89px;
-      }
-    }
-  }
-}
-@media screen and (min-width: 1400px) {
-  .aboutme {
-    &__underline {
-      display: none;
+      grid-column: 2;
+      grid-row: 2;
+      text-align: left;
+      margin-left: 15px;
+      padding: 0;
+      top: 26px;
     }
   }
 }

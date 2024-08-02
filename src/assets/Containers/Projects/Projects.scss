@@ -2,7 +2,7 @@
 
 .projects {
   &__heading {
-    padding: 120px 40px 10px;
+    padding: 14vh 40px 10px;
   }
 
   &__summary {
@@ -26,48 +26,24 @@
 
   &__underline {
     position: relative;
-
-    &::before {
-      content: "aiii";
-      z-index: -1;
-      text-align: center;
-      position: absolute;
-      font-size: 5em;
-      top: -98px;
-      padding-left: 50px;
-      color: transparent;
-      text-decoration-color: $line-color;
-      text-decoration-line: underline;
-    }
-  }
-}
-
-@media screen and (min-width: 667px) {
-  .projects {
-    &__heading {
-      padding: 60px 40px 10px;
-    }
+    width: 110px;
+    height: 11px;
+    top: -21px;
+    margin-left: 53px;
+    z-index: -1;
+    background-color: $line-color;
   }
 }
 
 @media screen and (min-width: 720px) {
   .projects {
     padding-bottom: 150px;
-
-    &__heading {
-      padding: 90px 40px 10px;
-    }
   }
 }
 
 @media screen and (min-width: 740px) {
   .projects {
     padding-bottom: 150px;
-
-    &__heading {
-      padding: 50px 40px 10px;
-    }
-
     &__carousel {
       display: none;
     }
@@ -95,9 +71,6 @@
 
 @media screen and (min-width: 750px) {
   .projects {
-    &__heading {
-      padding: 80px 40px 10px;
-    }
 
     &__carousel {
       margin-left: 90px;
@@ -107,68 +80,10 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .projects {
-    &__heading {
-      padding: 90px 40px 10px;
-    }
-  }
-}
-
-@media screen and (min-width: 820px) {
-  .projects {
-    &__heading {
-      padding: 180px 40px 10px;
-    }
-  }
-}
-
-@media screen and (min-width: 830px) {
-  .projects {
-    &__heading {
-      padding: 90px 40px 10px;
-    }
-  }
-}
-
-@media screen and (min-width: 853px) {
-  .projects {
-    &__heading {
-      padding: 190px 40px 10px;
-    }
-  }
-}
-
-@media screen and (min-width: 912px) {
-  .projects {
-    &__heading {
-      padding: 200px 40px 10px;
-    }
-  }
-}
-
-@media screen and (min-width: 914px) {
-  .projects {
-    &__heading {
-      padding: 90px 40px 10px;
-    }
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .projects {
-    &__heading {
-      padding: 150px 40px 10px;
-    }
-  }
-}
 
 @media screen and (min-width: 1050px) {
   .projects {
     padding-bottom: 150px;
-    &__heading {
-      padding: 120px 40px 10px;
-    }
 
     &__carousel-desktop {
       &--pair {
@@ -184,9 +99,6 @@
 
   @media screen and (min-width: 1300px) {
     .projects {
-      &__heading {
-        padding: 130px 40px 10px;
-      }
 
       &__carousel-desktop {
         &--pair {

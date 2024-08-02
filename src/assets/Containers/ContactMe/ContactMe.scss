@@ -2,7 +2,7 @@
 
 .contactpage {
   &__heading {
-    padding: 120px 40px 30px;
+    padding: 14vh 40px 30px;
   }
 
   &__subheading {
@@ -25,120 +25,11 @@
 
   &__underline {
     position: relative;
-
-    &::before {
-      content: "aiiiii";
-      z-index: -1;
-      padding-left: 50px;
-      text-align: center;
-      position: absolute;
-      font-size: 5em;
-      top: -118px;
-      color: transparent;
-      text-decoration-color: $line-color;
-      text-decoration-line: underline;
-    }
-  }
-}
-
-@media screen and (min-width: 667px) {
-  .contactpage {
-    &__heading {
-      padding: 60px 40px 30px;
-    }
-  }
-}
-@media screen and (min-width: 720px) {
-  .contactpage {
-    &__heading {
-      padding: 90px 40px 30px;
-    }
-  }
-}
-
-@media screen and (min-width: 740px) {
-  .contactpage {
-    &__heading {
-      padding: 50px 40px 30px;
-    }
-  }
-}
-
-@media screen and (min-width: 750px) {
-  .contactpage {
-    &__heading {
-      padding: 80px 40px 30px;
-    }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .contactpage {
-    &__heading {
-      padding: 90px 40px 30px;
-    }
-  }
-}
-
-@media screen and (min-width: 820px) {
-  .contactpage {
-    &__heading {
-      padding: 180px 40px 30px;
-    }
-  }
-}
-
-@media screen and (min-width: 830px) {
-  .contactpage {
-    &__heading {
-      padding: 90px 40px 30px;
-    }
-  }
-}
-
-@media screen and (min-width: 853px) {
-  .contactpage {
-    &__heading {
-      padding: 190px 40px 30px;
-    }
-  }
-}
-
-@media screen and (min-width: 912px) {
-  .contactpage {
-    &__heading {
-      padding: 200px 40px 30px;
-    }
-  }
-}
-
-@media screen and (min-width: 914px) {
-  .contactpage {
-    &__heading {
-      padding: 90px 40px 30px;
-    }
-  }
-}
-@media screen and (min-width: 1024px) {
-  .contactpage {
-    &__heading {
-      padding: 150px 40px 30px;
-    }
-  }
-}
-
-@media screen and (min-width: 1050px) {
-  .contactpage {
-    &__heading {
-      padding: 120px 40px 30px;
-    }
-  }
-}
-
-@media screen and (min-width: 1300px) {
-  .contactpage {
-    &__heading {
-      padding: 130px 40px 30px;
-    }
+    width: 150px;
+    height: 11px;
+    top: -41px;
+    margin-left: 53px;
+    z-index: -1;
+    background-color: $line-color;
   }
 }
