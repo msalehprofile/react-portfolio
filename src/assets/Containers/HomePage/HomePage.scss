@@ -26,102 +26,30 @@
     }
 }
 
-// @media screen and (min-width: 667px) {
-//     .homepage {
-//         .Typewriter {
-//             width: 70%;
-//             padding: 12vh 60px 50px;
-//         }
-//     }
-// }
-
-// @media screen and (min-width: 740px) {
-//     .homepage {
-//         .Typewriter {
-//             padding: 90px 60px 50px;
-//         }
-//     }
-// }
-
-// @media screen and (min-width: 750px) {
-//     .homepage {
-//         .Typewriter {
-//             width: 60%;
-//             padding: 155px 120px 50px;
-
-//         }
-//     }
-// }
-
-// @media screen and (min-width: 820px) {
-//     .homepage {
-//         .Typewriter {
-//             padding: 200px 120px 50px;
-//         }
-//     }
-// }
-
-// @media screen and (min-width: 844px) {
-//     .homepage {
-//         .Typewriter {
-//             padding: 100px 120px 50px;
-//         }
-//     }
-// }
-
-// @media screen and (min-width: 853px) {
-//     .homepage {
-//         .Typewriter {
-//             padding: 200px 120px 50px;
-//         }
-//     }
-// }
-
 @media screen and (min-width: 863px) {
     .homepage {
         margin-bottom: 200px;
-        .Typewriter {
-            width: 60%;
-            // padding: 105px 120px 50px;
-
-        }
-
     }
 }
-
-// @media screen and (min-width: 912px) {
-//     .homepage {
-//         .Typewriter {
-//             padding: 230px 120px 50px;
-//         }
-//     }
-// }
-
-// @media screen and (min-width: 914px) {
-//     .homepage {
-//         .Typewriter {
-//             padding: 130px 120px 50px;
-//         }
-//     }
-// }
 
 @media screen and (min-width: 1000px) {
     .homepage {
         margin-bottom: 200px;
 
         .Typewriter {
-            // padding: 175px 120px 0px;
+            width: 75%;
             font-size: $intro-font-size-large;
         }
     }
 }
 
 
-// @media screen and (min-width: 1300px) {
-//     .homepage {
-//         .Typewriter {
-//             padding: 200px 120px 0px;
-//         }
-//     }
-// }
+@media screen and (min-width: 1300px) {
+    .homepage {
+        .Typewriter {
+            width: 80%;
+            padding: 16vh 120px 0px;
+        }
+    }
+}
 

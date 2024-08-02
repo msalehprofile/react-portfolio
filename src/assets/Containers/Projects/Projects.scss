@@ -26,19 +26,12 @@
 
   &__underline {
     position: relative;
-
-    &::before {
-      content: "aiii";
-      z-index: -1;
-      text-align: center;
-      position: absolute;
-      font-size: 5em;
-      top: -98px;
-      padding-left: 50px;
-      color: transparent;
-      text-decoration-color: $line-color;
-      text-decoration-line: underline;
-    }
+    width: 110px;
+    height: 11px;
+    top: -21px;
+    margin-left: 53px;
+    z-index: -1;
+    background-color: $line-color;
   }
 }
 
