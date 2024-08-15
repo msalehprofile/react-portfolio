@@ -105,8 +105,6 @@ const Projects = () => {
       <p className="projects__summary">
         Below is a slide show of the projects that I am proud to share! I have
         included links to the code base and the live sites where possible.
-        Please note that due to not being in the position to host my own sites,
-        the full stack applications are not fully functional.
       </p>
       <ul className="projects__list">
         <li>Front End = FE</li>
